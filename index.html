@@ -14,6 +14,10 @@
 
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
 
     <!-- baseStyles -->
     <link rel="stylesheet" href="./css/index.css" />
@@ -63,7 +67,87 @@
 
       <!-- main container -->
       <main class="p-3 bg-white m-2 rounded h-full overflow-y-scroll w-full">
-        <section class="px-3 mt-5">
+        <nav
+          class="bg-white border-gray-200 :border-gray-600 :bg-gray-900 md:hidden"
+        >
+          <div
+            class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-2"
+          >
+            <a
+              href="https://flowbite.com"
+              class="flex items-center space-x-3 rtl:space-x-reverse"
+            >
+              <span
+                class="self-center text-2xl font-semibold whitespace-nowrap :text-white"
+                >Task<span class="text-purple-500">Wise</span>
+              </span>
+            </a>
+            <button
+              data-collapse-toggle="mega-menu-full-image"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 :text-gray-400 :hover:bg-gray-700 :focus:ring-gray-600"
+              aria-controls="mega-menu-full-image"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+            <div
+              id="mega-menu-full-image"
+              class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            >
+              <ul
+                class="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 :text-white md: :hover:text-blue-500 :hover:bg-gray-700 :hover:text-blue-500 md: :hover:bg-transparent :border-gray-700"
+                    aria-current="page"
+                    >Dashboard</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 :text-white md: :hover:text-blue-500 :hover:bg-gray-700 :hover:text-blue-500 md: :hover:bg-transparent :border-gray-700"
+                    >Marketplace</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 :text-white md: :hover:text-blue-500 :hover:bg-gray-700 :hover:text-blue-500 md: :hover:bg-transparent :border-gray-700"
+                    >Resources</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 :text-white md: :hover:text-blue-500 :hover:bg-gray-700 :hover:text-blue-500 md: :hover:bg-transparent :border-gray-700"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <section class="px-3">
           <span class="text-gray-500 text-xs">Tasks / </span>
           <span class="text-blue-600 text-xs">Dashboard</span>
         </section>
@@ -73,7 +157,7 @@
         >
           <p class="text-xs">
             <span class="font-semibold">Note:</span> This is just a UI Mock Up
-            implementation. 
+            implementation.
             <!-- For complete implementation -->
             <!-- <span class="underline text-blue-500 cursor-pointer"
               >click here</span
@@ -99,25 +183,30 @@
           </a>
         </section>
         <section
-        class="px-3 mt-5 font-semibold text-left rtl:text-right text-gray-900 bg-white"
-      >
-        Tasks Stats
-        <p class="mt-1 text-xs font-normal text-gray-500 :text-gray-400">
-          Browse a list of Flowbite products designed to help you work and
-          play, stay organized, get answers, keep in touch, grow your
-          business, and more.
-        </p>
-      </section>
-        <section class="px-3 mt-5 font-semibold text-left rtl:text-right text-gray-900 bg-white flex">
-          <article class="w-[250px] p-5 rounded-xl shadow-sm border-2 border-green-200 mr-2">
+          class="px-3 mt-5 font-semibold text-left rtl:text-right text-gray-900 bg-white"
+        >
+          Tasks Stats
+          <p class="mt-1 text-xs font-normal text-gray-500 :text-gray-400">
+            Browse a list of Flowbite products designed to help you work and
+            play, stay organized, get answers, keep in touch, grow your
+            business, and more.
+          </p>
+        </section>
+        <section
+          class="px-3 mt-5 font-semibold text-left rtl:text-right text-gray-900 bg-white flex"
+        >
+          <article
+            class="w-[250px] p-5 rounded-xl shadow-sm border-2 border-green-200 mr-2"
+          >
             <h5 class="text-xs mb-5">Completed Tasks</h5>
             <span class="text-lg">48</span>
           </article>
-          <article class="w-[250px] p-5 rounded-xl shadow-sm border-2 border-orange-200">
+          <article
+            class="w-[250px] p-5 rounded-xl shadow-sm border-2 border-orange-200"
+          >
             <h5 class="text-xs mb-5">Pending Tasks</h5>
             <span class="text-lg">48</span>
           </article>
-
         </section>
 
         <section
@@ -131,162 +220,178 @@
           </p>
         </section>
 
-        <section class="px-3 w-[80%]"><div class="relative overflow-x-auto sm:rounded-lg max-w-[80%] mt-5"></div>
-          <table class="w-full text-sm text-left rtl:text-right text-gray-500">
-            <thead class="text-xs text-gray-700 uppercase bg-gray-50">
-              <tr>
-                <th scope="col" class="px-6 py-3">Task</th>
-                <th scope="col" class="px-6 py-3">Category</th>
-                <th scope="col" class="px-6 py-3">Priority</th>
-                <th scope="col" class="px-6 py-3">Start Date Time</th>
-                <th scope="col" class="px-6 py-3">End Date Time</th>
-                <th scope="col" class="px-6 py-3">Modify</th>
-              </tr>
-            </thead>
-            <tbody class="text-xs">
-              <tr class="bg-white border-b hover:bg-gray-50">
-                <th
-                  scope="row"
-                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
-                >
-                  Complete final Draft IEEE
-                </th>
-                <td class="px-6 py-4">Work</td>
-                <td class="px-6 py-4">
-                  <span class="bg-red-300 text-black p-1 rounded">Hight</span>
-                </td>
-                <td class="px-6 py-4 font-normal">12 SEP 24 | 1:04 PM</td>
-                <td class="px-6 py-4 font-normal">12 SEP 24 | 1:04 PM</td>
-                <td class="px-6 py-4">
-                  <a
-                    href="#"
-                    class="font-medium text-blue-600 hover:underline mr-3"
-                    >Edit</a
-                  >
-                  <a href="#" class="font-medium text-red-600 hover:underline"
-                    >Delete</a
-                  >
-                </td>
-              </tr>
-              <tr class="bg-white border-b hover:bg-gray-50">
-                <th
-                  scope="row"
-                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
-                >
-                  Cut Vegetables for Lunch
-                </th>
-                <td class="px-6 py-4">Personal</td>
-                <td class="px-6 py-4">
-                  <span class="bg-orange-300 text-black p-1 rounded"
-                    >Medium</span
-                  >
-                </td>
-                <td class="px-6 py-4 font-normal">12 SEP 24 | 1:04 PM</td>
-                <td class="px-6 py-4 font-normal">12 SEP 24 | 1:04 PM</td>
-                <td class="px-6 py-4">
-                  <a
-                    href="#"
-                    class="font-medium text-blue-600 hover:underline mr-3"
-                    >Edit</a
-                  >
-                  <a href="#" class="font-medium text-red-600 hover:underline"
-                    >Delete</a
-                  >
-                </td>
-              </tr>
-              <tr class="bg-white border-b hover:bg-gray-50">
-                <th
-                  scope="row"
-                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
-                >
-                  Watch Match
-                </th>
-                <td class="px-6 py-4">Work</td>
-                <td class="px-6 py-4">
-                  <span class="bg-green-300 text-black p-1 rounded">low</span>
-                </td>
-                <td class="px-6 py-4 font-normal">12 SEP 24 | 1:04 PM</td>
-                <td class="px-6 py-4 font-normal">12 SEP 24 | 1:04 PM</td>
-                <td class="px-6 py-4">
-                  <a
-                    href="#"
-                    class="font-medium text-blue-600 hover:underline mr-3"
-                    >Edit</a
-                  >
-                  <a href="#" class="font-medium text-red-600 hover:underline"
-                    >Delete</a
-                  >
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <nav
-            class="flex items-center flex-column flex-wrap md:flex-row justify-between pt-4 px-4 "
-            aria-label="Table navigation"
+        <section class="px-3">
+          <div
+            class="relative overflow-x-auto sm:rounded-lg mt-5 md:w-[80%] lg:w-full"
           >
-            <span
-              class="text-xs font-normal text-gray-500 :text-gray-400 mb-4 md:mb-0 block w-full md:inline md:w-auto"
-              >Showing
-              <span class="font-semibold text-gray-900 :text-white">1-10</span>
-              of
-              <span class="font-semibold text-gray-900 :text-white"
-                >1000</span
-              ></span
+            <table
+              class="w-full text-sm text-left rtl:text-right text-gray-500"
             >
-            <ul class="inline-flex -space-x-px rtl:space-x-reverse text-sm h-8">
-              <li>
-                <a
-                  href="#"
-                  class="flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 :bg-gray-800 :border-gray-700 :text-gray-400 :hover:bg-gray-700 :hover:text-white"
-                  >Previous</a
+              <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                <tr class="wrap-small-devices">
+                  <th scope="col" class="px-6 py-3">Task</th>
+                  <th scope="col" class="px-6 py-3">Category</th>
+                  <th scope="col" class="px-6 py-3">Priority</th>
+                  <th scope="col" class="px-6 py-3">Start Date Time</th>
+                  <th scope="col" class="px-6 py-3">End Date Time</th>
+                  <th scope="col" class="px-6 py-3">Modify</th>
+                </tr>
+              </thead>
+              <tbody class="text-xs">
+                <tr
+                  class="wrap-small-devices bg-white border-b hover:bg-gray-50"
                 >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 :bg-gray-800 :border-gray-700 :text-gray-400 :hover:bg-gray-700 :hover:text-white"
-                  >1</a
+                  <th
+                    scope="row"
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    Complete final Draft IEEE
+                  </th>
+                  <td class="px-6 py-4">Work</td>
+                  <td class="px-6 py-4">
+                    <span class="bg-red-300 text-black p-1 rounded">Hight</span>
+                  </td>
+                  <td class="px-6 py-4 font-normal">12 SEP 24 | 1:04 PM</td>
+                  <td class="px-6 py-4 font-normal">12 SEP 24 | 1:04 PM</td>
+                  <td class="px-6 py-4">
+                    <a
+                      href="#"
+                      class="font-medium text-blue-600 hover:underline mr-3"
+                      >Edit</a
+                    >
+                    <a href="#" class="font-medium text-red-600 hover:underline"
+                      >Delete</a
+                    >
+                  </td>
+                </tr>
+                <tr
+                  class="wrap-small-devices bg-white border-b hover:bg-gray-50"
                 >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 :bg-gray-800 :border-gray-700 :text-gray-400 :hover:bg-gray-700 :hover:text-white"
-                  >2</a
+                  <th
+                    scope="row"
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    Cut Vegetables for Lunch
+                  </th>
+                  <td class="px-6 py-4">Personal</td>
+                  <td class="px-6 py-4">
+                    <span class="bg-orange-300 text-black p-1 rounded"
+                      >Medium</span
+                    >
+                  </td>
+                  <td class="px-6 py-4 font-normal">12 SEP 24 | 1:04 PM</td>
+                  <td class="px-6 py-4 font-normal">12 SEP 24 | 1:04 PM</td>
+                  <td class="px-6 py-4">
+                    <a
+                      href="#"
+                      class="font-medium text-blue-600 hover:underline mr-3"
+                      >Edit</a
+                    >
+                    <a href="#" class="font-medium text-red-600 hover:underline"
+                      >Delete</a
+                    >
+                  </td>
+                </tr>
+                <tr
+                  class="wrap-small-devices bg-white border-b hover:bg-gray-50"
                 >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  aria-current="page"
-                  class="flex items-center justify-center px-3 h-8 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 :border-gray-700 :bg-gray-700 :text-white"
-                  >3</a
+                  <th
+                    scope="row"
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    Watch Match
+                  </th>
+                  <td class="px-6 py-4">Work</td>
+                  <td class="px-6 py-4">
+                    <span class="bg-green-300 text-black p-1 rounded">low</span>
+                  </td>
+                  <td class="px-6 py-4 font-normal">12 SEP 24 | 1:04 PM</td>
+                  <td class="px-6 py-4 font-normal">12 SEP 24 | 1:04 PM</td>
+                  <td class="px-6 py-4">
+                    <a
+                      href="#"
+                      class="font-medium text-blue-600 hover:underline mr-3"
+                      >Edit</a
+                    >
+                    <a href="#" class="font-medium text-red-600 hover:underline"
+                      >Delete</a
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <nav
+              class="flex items-center flex-column flex-wrap md:flex-row justify-between pt-4 md:px-4"
+              aria-label="Table navigation"
+            >
+              <span
+                class="text-xs font-normal text-gray-500 :text-gray-400 mb-4 md:mb-0 block w-full md:inline md:w-auto"
+                >Showing
+                <span class="font-semibold text-gray-900 :text-white"
+                  >1-10</span
                 >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 :bg-gray-800 :border-gray-700 :text-gray-400 :hover:bg-gray-700 :hover:text-white"
-                  >4</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 :bg-gray-800 :border-gray-700 :text-gray-400 :hover:bg-gray-700 :hover:text-white"
-                  >5</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 :bg-gray-800 :border-gray-700 :text-gray-400 :hover:bg-gray-700 :hover:text-white"
-                  >Next</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </div></section>
+                of
+                <span class="font-semibold text-gray-900 :text-white"
+                  >1000</span
+                ></span
+              >
+              <ul
+                class="inline-flex -space-x-px rtl:space-x-reverse text-sm h-8"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 :bg-gray-800 :border-gray-700 :text-gray-400 :hover:bg-gray-700 :hover:text-white"
+                    >Previous</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 :bg-gray-800 :border-gray-700 :text-gray-400 :hover:bg-gray-700 :hover:text-white"
+                    >1</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 :bg-gray-800 :border-gray-700 :text-gray-400 :hover:bg-gray-700 :hover:text-white"
+                    >2</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    aria-current="page"
+                    class="flex items-center justify-center px-3 h-8 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 :border-gray-700 :bg-gray-700 :text-white"
+                    >3</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 :bg-gray-800 :border-gray-700 :text-gray-400 :hover:bg-gray-700 :hover:text-white"
+                    >4</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 :bg-gray-800 :border-gray-700 :text-gray-400 :hover:bg-gray-700 :hover:text-white"
+                    >5</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 :bg-gray-800 :border-gray-700 :text-gray-400 :hover:bg-gray-700 :hover:text-white"
+                    >Next</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </section>
 
         <section class="font-normal mt-3 border-t pt-3 flex space-x-10 p-5">
           <span
@@ -301,5 +406,7 @@
         </section>
       </main>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
   </body>
 </html>
