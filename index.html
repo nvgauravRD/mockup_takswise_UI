@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taskwise</title>
+
+    <!-- icons library -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- baseStyles -->
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body class="h-screen overflow-y-hidden">
+    <main class="w-full h-full flex">
+      <!-- sidebar -->
+      <aside class="p-5 bg-white flex flex-col justify-between hidden md:flex">
+        <h1 class="text-xl">T<span class="text-purple-500">W</span></h1>
+
+        <ul class="mt-10">
+          <li
+            class="p-1 px-2 hover:bg-gray-200 rounded-full cursor-pointer mb-3"
+          >
+            <i class="fal fa-box"></i>
+          </li>
+          <li
+            class="p-1 px-2 hover:bg-gray-200 rounded-full cursor-pointer my-5"
+          >
+            <i class="fal fa-bell"></i>
+          </li>
+          <li
+            class="p-1 px-2 hover:bg-gray-200 rounded-full cursor-pointer my-5"
+          >
+            <i class="fal fa-calendar"></i>
+          </li>
+          <li
+            class="p-1 px-2 hover:bg-gray-200 rounded-full cursor-pointer mb-3"
+          >
+            <i class="fal fa-cog"></i>
+          </li>
+        </ul>
+
+        <ul class="mt-10">
+          <li
+            class="p-1 px-2 hover:bg-gray-200 rounded-full cursor-pointer my-5"
+          >
+            <i class="fal fa-user"></i>
+          </li>
+          <li
+            class="p-1 px-2 hover:bg-gray-200 rounded-full cursor-pointer mb-3"
+          >
+            <i class="fal fa-sign-out"></i>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- main container -->
+      <main class="p-3 bg-white m-2 rounded h-full overflow-y-scroll w-full">
+        <section class="px-3 mt-5">
+          <span class="text-gray-500 text-xs">Tasks / </span>
+          <span class="text-blue-600 text-xs">Dashboard</span>
+        </section>
+        <h3 class="px-3 font-medium text-2xl">Task Management</h3>
+        <section
+          class="w-fit p-2 m-3 rounded border border-green-400 m-2 bg-green-100"
+        >
+          <p class="text-xs">
+            <span class="font-semibold">Note:</span> This is just a UI Mock Up
+            implementation. 
+            <!-- For complete implementation -->
+            <!-- <span class="underline text-blue-500 cursor-pointer"
+              >click here</span
+            > -->
+          </p>
+        </section>
+        <section class="px-3 mt-5 border-b pb-3 flex items-center">
+          <a
+            href="./index.html"
+            class="hover:bg-gray-200 p-2 rounded-xl text-gray-500 text-sm mr-5 flex items-center"
+            ><i class="fal fa-list mr-2"></i>List</a
+          >
+          <a
+            href="./Timeline.html"
+            class="hover:bg-gray-200 p-2 rounded-xl text-gray-600 text-xs flex items-center mr-5"
+            ><i class="fal fa-clock mr-2"></i>TimeLine</a
+          >
+          <a
+            href="./CreateNewTask.html"
+            class="text-xs p-2 bg-purple-500 text-white rounded-xl"
+          >
+            Create New Task
+          </a>
+        </section>
+        <section
+        class="px-3 mt-5 font-semibold text-left rtl:text-right text-gray-900 bg-white"
+      >
+        Tasks Stats
+        <p class="mt-1 text-xs font-normal text-gray-500 :text-gray-400">
+          Browse a list of Flowbite products designed to help you work and
+          play, stay organized, get answers, keep in touch, grow your
+          business, and more.
+        </p>
+      </section>
+        <section class="px-3 mt-5 font-semibold text-left rtl:text-right text-gray-900 bg-white flex">
+          <article class="w-[250px] p-5 rounded-xl shadow-sm border-2 border-green-200 mr-2">
+            <h5 class="text-xs mb-5">Completed Tasks</h5>
+            <span class="text-lg">48</span>
+          </article>
+          <article class="w-[250px] p-5 rounded-xl shadow-sm border-2 border-orange-200">
+            <h5 class="text-xs mb-5">Pending Tasks</h5>
+            <span class="text-lg">48</span>
+          </article>
+
+        </section>
+
+        <section
+          class="px-3 mt-5 font-semibold text-left rtl:text-right text-gray-900 bg-white"
+        >
+          Pending Tasks
+          <p class="mt-1 text-xs font-normal text-gray-500 :text-gray-400">
+            Browse a list of Flowbite products designed to help you work and
+            play, stay organized, get answers, keep in touch, grow your
+            business, and more.
+          </p>
+        </section>
+
+        <section class="px-3 w-[80%]"><div class="relative overflow-x-auto sm:rounded-lg max-w-[80%] mt-5"></div>
+          <table class="w-full text-sm text-left rtl:text-right text-gray-500">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+              <tr>
+                <th scope="col" class="px-6 py-3">Task</th>
+                <th scope="col" class="px-6 py-3">Category</th>
+                <th scope="col" class="px-6 py-3">Priority</th>
+                <th scope="col" class="px-6 py-3">Start Date Time</th>
+                <th scope="col" class="px-6 py-3">End Date Time</th>
+                <th scope="col" class="px-6 py-3">Modify</th>
+              </tr>
+            </thead>
+            <tbody class="text-xs">
+              <tr class="bg-white border-b hover:bg-gray-50">
+                <th
+                  scope="row"
+                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                >
+                  Complete final Draft IEEE
+                </th>
+                <td class="px-6 py-4">Work</td>
+                <td class="px-6 py-4">
+                  <span class="bg-red-300 text-black p-1 rounded">Hight</span>
+                </td>
+                <td class="px-6 py-4 font-normal">12 SEP 24 | 1:04 PM</td>
+                <td class="px-6 py-4 font-normal">12 SEP 24 | 1:04 PM</td>
+                <td class="px-6 py-4">
+                  <a
+                    href="#"
+                    class="font-medium text-blue-600 hover:underline mr-3"
+                    >Edit</a
+                  >
+                  <a href="#" class="font-medium text-red-600 hover:underline"
+                    >Delete</a
+                  >
+                </td>
+              </tr>
+              <tr class="bg-white border-b hover:bg-gray-50">
+                <th
+                  scope="row"
+                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                >
+                  Cut Vegetables for Lunch
+                </th>
+                <td class="px-6 py-4">Personal</td>
+                <td class="px-6 py-4">
+                  <span class="bg-orange-300 text-black p-1 rounded"
+                    >Medium</span
+                  >
+                </td>
+                <td class="px-6 py-4 font-normal">12 SEP 24 | 1:04 PM</td>
+                <td class="px-6 py-4 font-normal">12 SEP 24 | 1:04 PM</td>
+                <td class="px-6 py-4">
+                  <a
+                    href="#"
+                    class="font-medium text-blue-600 hover:underline mr-3"
+                    >Edit</a
+                  >
+                  <a href="#" class="font-medium text-red-600 hover:underline"
+                    >Delete</a
+                  >
+                </td>
+              </tr>
+              <tr class="bg-white border-b hover:bg-gray-50">
+                <th
+                  scope="row"
+                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                >
+                  Watch Match
+                </th>
+                <td class="px-6 py-4">Work</td>
+                <td class="px-6 py-4">
+                  <span class="bg-green-300 text-black p-1 rounded">low</span>
+                </td>
+                <td class="px-6 py-4 font-normal">12 SEP 24 | 1:04 PM</td>
+                <td class="px-6 py-4 font-normal">12 SEP 24 | 1:04 PM</td>
+                <td class="px-6 py-4">
+                  <a
+                    href="#"
+                    class="font-medium text-blue-600 hover:underline mr-3"
+                    >Edit</a
+                  >
+                  <a href="#" class="font-medium text-red-600 hover:underline"
+                    >Delete</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <nav
+            class="flex items-center flex-column flex-wrap md:flex-row justify-between pt-4 px-4 "
+            aria-label="Table navigation"
+          >
+            <span
+              class="text-xs font-normal text-gray-500 :text-gray-400 mb-4 md:mb-0 block w-full md:inline md:w-auto"
+              >Showing
+              <span class="font-semibold text-gray-900 :text-white">1-10</span>
+              of
+              <span class="font-semibold text-gray-900 :text-white"
+                >1000</span
+              ></span
+            >
+            <ul class="inline-flex -space-x-px rtl:space-x-reverse text-sm h-8">
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 :bg-gray-800 :border-gray-700 :text-gray-400 :hover:bg-gray-700 :hover:text-white"
+                  >Previous</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 :bg-gray-800 :border-gray-700 :text-gray-400 :hover:bg-gray-700 :hover:text-white"
+                  >1</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 :bg-gray-800 :border-gray-700 :text-gray-400 :hover:bg-gray-700 :hover:text-white"
+                  >2</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  aria-current="page"
+                  class="flex items-center justify-center px-3 h-8 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 :border-gray-700 :bg-gray-700 :text-white"
+                  >3</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 :bg-gray-800 :border-gray-700 :text-gray-400 :hover:bg-gray-700 :hover:text-white"
+                  >4</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 :bg-gray-800 :border-gray-700 :text-gray-400 :hover:bg-gray-700 :hover:text-white"
+                  >5</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 :bg-gray-800 :border-gray-700 :text-gray-400 :hover:bg-gray-700 :hover:text-white"
+                  >Next</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div></section>
+
+        <section class="font-normal mt-3 border-t pt-3 flex space-x-10 p-5">
+          <span
+            class="text-blue-500 text-xs mr-5 flex items-center hover:cursor-pointer hover:underline"
+            >Task History
+          </span>
+          <span
+            class="text-red-500 text-xs mr-5 flex items-center hover:cursor-pointer hover:underline"
+          >
+            Delete All Tasks
+          </span>
+        </section>
+      </main>
+    </main>
+  </body>
+</html>
